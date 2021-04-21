@@ -1,0 +1,53 @@
+{
+    "name": "mahmudz/vue-form",
+    "description": "This is my package VueForm",
+    "keywords": [
+        "mahmudz",
+        "laravel",
+        "vue-form"
+    ],
+    "homepage": "https://github.com/mahmudz/vue-form",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mahmudul Hasan",
+            "email": "mahmudbappy.pri@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "laravel/framework": "^6.0|^7.0|^8.0"
+    },
+    "require-dev": {
+        "nunomaduro/larastan": "^0.6.4",
+        "orchestra/testbench": "^5.0|^6.0",
+        "pestphp/pest": "^0.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mahmudz\\VueForm\\": "src",
+            "Mahmudz\\VueForm\\Database\\Factories\\": "database/factories"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mahmudz\\VueForm\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mahmudz\\VueForm\\VueFormServiceProvider"
+            ],
+            "aliases": {
+                "VueForm": "Mahmudz\\VueForm\\VueFormFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
