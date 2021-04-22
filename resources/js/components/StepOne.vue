@@ -19,7 +19,7 @@
     </div>
 
     <div class="mb-5">
-      <label class="font-bold mb-1 text-gray-700 block">Phoasne</label>
+      <label class="font-bold mb-1 text-gray-700 block">Phone</label>
       <input
           v-model="createUserData.phone"
           type="tel"
