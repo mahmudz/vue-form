@@ -11,6 +11,7 @@
     },
     "devDependencies": {
         "@tailwindcss/forms": "^0.2.1",
+        "@tailwindcss/ui": "^0.7.2",
         "autoprefixer": "^10.2.5",
         "axios": "^0.21",
         "browser-sync": "^2.26.14",
@@ -23,9 +24,9 @@
         "vue": "^2.6.12",
         "vue-content-placeholders": "^0.2.1",
         "vue-loader": "^15.9.6",
-        "vue-template-compiler": "^2.6.12",
+        "vue-template-compiler": "^2.6.12"
     },
     "prettier": {
-        "printWidth": 100
+        "printWidth": 180
     }
 }

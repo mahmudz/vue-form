@@ -57,7 +57,13 @@
                             </dl>
                         </div>
                     </template>
-                    <h4 v-else>No data here.</h4>
+                    <h4
+                        v-if="
+                            createUserData.educations.length === 0 && openNewEducationForm === false
+                        "
+                    >
+                        No data here.
+                    </h4>
                 </template>
 
                 <div class="border rounded overflow-hidden bg-white" v-show="openNewEducationForm">
@@ -91,7 +97,7 @@
                             class="w-full border-gray-100 px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:shadow-outline text-gray-600 font-medium"
                         />
                     </div>
-                    <div class="px-4 pb-4 text-right sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                    <div class="px-4 pb-4 text-right sm:px-6">
                         <button
                             class="px-4 py-2 rounded-lg text-gray-700 bg-white border"
                             @click="openNewEducationForm = false"
@@ -167,10 +173,17 @@
                         </div>
                     </template>
 
-                    <h4 v-else>No data here.</h4>
+                    <h4
+                        v-if="
+                            createUserData.experiences.length === 0 &&
+                                openNewExperienceForm === false
+                        "
+                    >
+                        No data here.
+                    </h4>
                 </template>
                 <div class="border rounded overflow-hidden bg-white" v-show="openNewExperienceForm">
-                    <div class="p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                    <div class="p-4 sm:grid sm:gap-4 sm:px-6">
                         <div class="text-sm font-medium text-gray-500">
                             Institute name
                         </div>
@@ -180,7 +193,7 @@
                             class="w-full border-gray-100 px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:shadow-outline text-gray-600 font-medium"
                         />
                     </div>
-                    <div class="p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                    <div class="p-4 sm:grid sm:gap-4 sm:px-6">
                         <dt class="text-sm font-medium text-gray-500">
                             Role
                         </dt>
@@ -190,7 +203,7 @@
                             class="w-full border-gray-100 px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:shadow-outline text-gray-600 font-medium"
                         />
                     </div>
-                    <div class="p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                    <div class="p-4 sm:grid sm:gap-4 sm:px-6">
                         <dt class="text-sm font-medium text-gray-500">
                             Years Of Experience
                         </dt>
@@ -200,7 +213,7 @@
                             class="w-full border-gray-100 px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:shadow-outline text-gray-600 font-medium"
                         />
                     </div>
-                    <div class="px-4 pb-4 text-right sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                    <div class="px-4 pb-4 text-right sm:px-6">
                         <button
                             class="px-4 py-2 rounded-lg text-gray-700 bg-white border"
                             @click="openNewExperienceForm = false"
@@ -263,4 +276,3 @@ export default {
 };
 </script>
 
-<style scoped></style>

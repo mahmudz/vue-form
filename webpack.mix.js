@@ -1,6 +1,4 @@
 const mix = require('laravel-mix');
-const tailwindcss = require('tailwindcss');
-const webpack = require('webpack');
 
 /*
  |--------------------------------------------------------------------------
@@ -12,16 +10,12 @@ const webpack = require('webpack');
  | file for the application as well as bundling up all the JS files.
  |
  */
+mix.setPublicPath('public');
+mix.js("resources/js/app.js", "js")
+    .postCss("resources/css/app.css", "css", [
+        require("postcss-import"),
+        require("tailwindcss"),
+        require("autoprefixer")
+    ]).vue()
 
-mix.postCss('resources/css/app.css', 'public/app.css', [require('postcss-import'), require('tailwindcss')])
-    .setPublicPath('public')
-    .js('resources/js/app.js', 'public')
-    .version()
-    .webpackConfig({
-        resolve: {
-            symlinks: false,
-            alias: {
-                '@': path.resolve(__dirname, 'resources/js/'),
-            },
-        },
-    });
+mix.copy('public', '../../../../../MyDrive/Office Workspace/btr-dev/public/vendor/vue-form');
