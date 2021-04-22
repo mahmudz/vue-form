@@ -31,7 +31,7 @@
                     href="http://papertoilet.com"
                     class="w-40 block mx-auto focus:outline-none py-2 px-5 rounded-lg shadow-sm text-center text-gray-600 bg-white hover:bg-gray-100 font-medium border"
                 >
-                  Take me to somewhere else
+                  Roll The Mouse
                 </a>
               </div>
             </div>
