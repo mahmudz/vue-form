@@ -15,8 +15,8 @@ class VueFormServiceProvider extends ServiceProvider
             $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
             $this->publishes([
-                __DIR__.'/../resources/assets' => resource_path('js/vendor/vue-form'),
-            ], 'vue-form-resources');
+                __DIR__.'/../public' => public_path('vendor/vue-form'),
+            ], 'vue-form-assets');
         }
     }
 
