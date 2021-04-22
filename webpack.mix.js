@@ -16,6 +16,8 @@ mix.js("resources/js/app.js", "js")
         require("postcss-import"),
         require("tailwindcss"),
         require("autoprefixer")
-    ]).vue()
+    ]).vue();
 
+
+// Only for dev mode
 mix.copy('public', '../../../../../MyDrive/Office Workspace/btr-dev/public/vendor/vue-form');

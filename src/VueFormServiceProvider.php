@@ -16,6 +16,7 @@ class VueFormServiceProvider extends ServiceProvider
 
             $this->publishes([
                 __DIR__.'/../public' => public_path('vendor/vue-form'),
+                __DIR__.'/../public/images' => public_path('images'),
             ], 'vue-form-assets');
         }
     }

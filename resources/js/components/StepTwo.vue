@@ -74,7 +74,7 @@
                         <input
                             v-model="newEducation.institute_name"
                             type="text"
-                            class="w-full border-gray-100 px-4 py-2 rounded-lg shadow-sm focus:outline-none focus:shadow-outline text-gray-600 font-medium"
+                            class="w-full border px-4 py-2 rounded-lg shadow-sm focus:outline-none focus:shadow-outline text-gray-600 font-medium"
                         />
                     </div>
                     <div class="p-4 sm:grid sm:gap-4 sm:px-6">
@@ -84,7 +84,7 @@
                         <input
                             v-model="newEducation.degree"
                             type="text"
-                            class="w-full border-gray-100 px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:shadow-outline text-gray-600 font-medium"
+                            class="w-full border px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:shadow-outline text-gray-600 font-medium"
                         />
                     </div>
                     <div class="p-4 sm:grid sm:gap-4 sm:px-6">
@@ -94,7 +94,7 @@
                         <input
                             v-model="newEducation.passing_year"
                             type="number"
-                            class="w-full border-gray-100 px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:shadow-outline text-gray-600 font-medium"
+                            class="w-full border px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:shadow-outline text-gray-600 font-medium"
                         />
                     </div>
                     <div class="px-4 pb-4 text-right sm:px-6">
@@ -190,7 +190,7 @@
                         <input
                             v-model="newExperience.institute_name"
                             type="text"
-                            class="w-full border-gray-100 px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:shadow-outline text-gray-600 font-medium"
+                            class="w-full border px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:shadow-outline text-gray-600 font-medium"
                         />
                     </div>
                     <div class="p-4 sm:grid sm:gap-4 sm:px-6">
@@ -200,7 +200,7 @@
                         <input
                             v-model="newExperience.role"
                             type="text"
-                            class="w-full border-gray-100 px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:shadow-outline text-gray-600 font-medium"
+                            class="w-full border px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:shadow-outline text-gray-600 font-medium"
                         />
                     </div>
                     <div class="p-4 sm:grid sm:gap-4 sm:px-6">
@@ -210,7 +210,7 @@
                         <input
                             v-model="newExperience.years_of_experience"
                             type="number"
-                            class="w-full border-gray-100 px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:shadow-outline text-gray-600 font-medium"
+                            class="w-full border px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:shadow-outline text-gray-600 font-medium"
                         />
                     </div>
                     <div class="px-4 pb-4 text-right sm:px-6">
