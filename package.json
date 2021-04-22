@@ -24,6 +24,7 @@
         "vue": "^2.6.12",
         "vue-content-placeholders": "^0.2.1",
         "vue-loader": "^15.9.6",
+        "vue-progressbar": "^0.7.5",
         "vue-template-compiler": "^2.6.12"
     },
     "prettier": {
