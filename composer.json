@@ -43,10 +43,7 @@
         "laravel": {
             "providers": [
                 "Mahmudz\\VueForm\\VueFormServiceProvider"
-            ],
-            "aliases": {
-                "VueForm": "Mahmudz\\VueForm\\VueFormFacade"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",
